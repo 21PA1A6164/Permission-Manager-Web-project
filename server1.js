@@ -21,11 +21,11 @@ app.use(bodyparser.json())
 app.use(express.static("public"))
 
 app.get('/',(req,res) => {
-    res.sendFile(__dirname+'/login.html')
+    res.sendFile(__dirname+'/index.html')
 })
 
 app.get('/logout',(req,res) => {
-    res.sendFile(__dirname+'/login.html');
+    res.sendFile(__dirname+'/index.html');
 })
 
 app.post('/studentloginsubmit',(req,res) => {
